@@ -1,0 +1,993 @@
+{
+  "summary": {
+    "ok": true,
+    "rounds": 15,
+    "embedModel": "Xenova/all-MiniLM-L6-v2",
+    "embedDims": 384,
+    "seeded": 5,
+    "writtenCount": 90,
+    "durationsMs": 19861,
+    "stats": {
+      "global": {
+        "totalCount": 5,
+        "scopeCounts": {
+          "global": 5
+        },
+        "categoryCounts": {
+          "other": 1,
+          "fact": 3,
+          "decision": 1
+        }
+      },
+      "agents": {
+        "totalCount": 90,
+        "scopeCounts": {
+          "agent:alice": 30,
+          "agent:bob": 30,
+          "agent:charlie": 30
+        },
+        "categoryCounts": {
+          "decision": 45,
+          "other": 45
+        }
+      }
+    }
+  },
+  "memories": {
+    "global": [
+      {
+        "id": "898d351a-bdb5-46c9-9795-6fe65e00b95e",
+        "text": "AccessTracker reinforces time-decay half-life when source is manual.",
+        "category": "other",
+        "scope": "global",
+        "importance": 0.7,
+        "timestamp": 1772945643838,
+        "metadata": "{\"tag\":\"seed\",\"at\":\"2026-03-08T04:54:03.838Z\",\"accessCount\":10,\"lastAccessedAt\":1772945658132}"
+      },
+      {
+        "id": "d41b9f9e-a30c-4f98-8aac-cd0710a9e695",
+        "text": "FTS index creation may fail; system gracefully falls back to vector-only mode.",
+        "category": "fact",
+        "scope": "global",
+        "importance": 0.7,
+        "timestamp": 1772945643819,
+        "metadata": "{\"tag\":\"seed\",\"at\":\"2026-03-08T04:54:03.819Z\",\"accessCount\":16,\"lastAccessedAt\":1772945660962}"
+      },
+      {
+        "id": "0f1f511b-4a0c-4a2e-a517-59f4e0752249",
+        "text": "Use lightweight cosine rerank as fallback when cross-encoder API is not available.",
+        "category": "decision",
+        "scope": "global",
+        "importance": 0.7,
+        "timestamp": 1772945643801,
+        "metadata": "{\"tag\":\"seed\",\"at\":\"2026-03-08T04:54:03.801Z\",\"accessCount\":21,\"lastAccessedAt\":1772945662347}"
+      },
+      {
+        "id": "f3a19f87-a7e3-4f68-9a52-f94e01d87405",
+        "text": "Local embeddings via Xenova/all-MiniLM-L6-v2 with 384 dimensions, normalized vectors.",
+        "category": "fact",
+        "scope": "global",
+        "importance": 0.7,
+        "timestamp": 1772945643778,
+        "metadata": "{\"tag\":\"seed\",\"at\":\"2026-03-08T04:54:03.778Z\",\"accessCount\":22,\"lastAccessedAt\":1772945661666}"
+      },
+      {
+        "id": "f9d50f2b-0067-4152-a5a3-e6c6f59dedc0",
+        "text": "Fix(#15): BM25-only ghost entries filtered via store.hasId(id) validation in fuseResults.",
+        "category": "fact",
+        "scope": "global",
+        "importance": 0.7,
+        "timestamp": 1772945643750,
+        "metadata": "{\"tag\":\"seed\",\"at\":\"2026-03-08T04:54:03.539Z\",\"accessCount\":11,\"lastAccessedAt\":1772945662605}"
+      }
+    ],
+    "alice": [
+      {
+        "id": "f10508cd-609b-4d37-85f2-d61c56422c00",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=15",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945661380,
+        "metadata": "{\"type\":\"decision\",\"query\":\"local embeddings Xenova MiniLM\",\"round\":15}"
+      },
+      {
+        "id": "bb512662-e30a-46e1-bc1a-b665d2443ec2",
+        "text": "Agent Alice observed: \"local embeddings Xenova MiniLM\" -> top=f3a19f87 at 2026-03-08T04:54:21.309Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945661345,
+        "metadata": "{\"type\":\"observation\",\"query\":\"local embeddings Xenova MiniLM\",\"round\":15}"
+      },
+      {
+        "id": "6391bd8e-4b37-43f7-963c-0fd759ac1d64",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=14",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945659856,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":14}"
+      },
+      {
+        "id": "30e30b79-9809-41f0-a868-fe0f098719a3",
+        "text": "Agent Alice observed: \"vector dimension mismatch handling\" -> top=3fbcb584 at 2026-03-08T04:54:19.771Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945659811,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":14,\"accessCount\":1,\"lastAccessedAt\":1772945661878}"
+      },
+      {
+        "id": "d1fc46dc-c1c7-455c-a56d-f17243efa8c3",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=13",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945658438,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":13}"
+      },
+      {
+        "id": "554be7d3-c92e-4ec3-94b9-8c1aab5ce620",
+        "text": "Agent Alice observed: \"vector dimension mismatch handling\" -> top=3fbcb584 at 2026-03-08T04:54:18.374Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945658408,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":13}"
+      },
+      {
+        "id": "57734f32-650c-48f5-90b1-78a9495ece89",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=12",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945657131,
+        "metadata": "{\"type\":\"decision\",\"query\":\"BM25 ghost entries fix\",\"round\":12}"
+      },
+      {
+        "id": "aca53dab-4b54-4491-b2da-f377e7934bbf",
+        "text": "Agent Alice observed: \"BM25 ghost entries fix\" -> top=cadf917e at 2026-03-08T04:54:17.061Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945657103,
+        "metadata": "{\"type\":\"observation\",\"query\":\"BM25 ghost entries fix\",\"round\":12}"
+      },
+      {
+        "id": "cd37014c-05da-452e-b61f-a054eafa3c85",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=11",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945655946,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":11}"
+      },
+      {
+        "id": "3fbcb584-e5da-4ef7-86bc-26a146d97198",
+        "text": "Agent Alice observed: \"vector dimension mismatch handling\" -> top=f3a19f87 at 2026-03-08T04:54:15.884Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945655922,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":11,\"accessCount\":3,\"lastAccessedAt\":1772945662060}"
+      },
+      {
+        "id": "1a346572-80c2-46da-a972-f291371d546a",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=10",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945654829,
+        "metadata": "{\"type\":\"decision\",\"query\":\"lightweight rerank cosine\",\"round\":10}"
+      },
+      {
+        "id": "f08c7c9c-0c1d-4a76-9bd0-79f3cc000e34",
+        "text": "Agent Alice observed: \"lightweight rerank cosine\" -> top=0f1f511b at 2026-03-08T04:54:14.764Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945654807,
+        "metadata": "{\"type\":\"observation\",\"query\":\"lightweight rerank cosine\",\"round\":10}"
+      },
+      {
+        "id": "47af188f-9913-480a-997e-68d4239799c7",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=9",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945652794,
+        "metadata": "{\"type\":\"decision\",\"query\":\"FTS fallback vector-only\",\"round\":9}"
+      },
+      {
+        "id": "4d4cc991-adce-4fb3-955c-f23614691d66",
+        "text": "Agent Alice observed: \"FTS fallback vector-only\" -> top=d41b9f9e at 2026-03-08T04:54:12.721Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945652755,
+        "metadata": "{\"type\":\"observation\",\"query\":\"FTS fallback vector-only\",\"round\":9}"
+      },
+      {
+        "id": "4795ec20-6d41-43e8-912c-c722e6516cc3",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=8",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945651160,
+        "metadata": "{\"type\":\"decision\",\"query\":\"BM25 ghost entries fix\",\"round\":8}"
+      },
+      {
+        "id": "3b0c7f8d-90f8-4e29-8f59-c882232d3972",
+        "text": "Agent Alice observed: \"BM25 ghost entries fix\" -> top=cadf917e at 2026-03-08T04:54:11.060Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945651120,
+        "metadata": "{\"type\":\"observation\",\"query\":\"BM25 ghost entries fix\",\"round\":8,\"accessCount\":1,\"lastAccessedAt\":1772945657732}"
+      },
+      {
+        "id": "192f77cc-a829-4a3a-9b33-6766a61f548a",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=7",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945649144,
+        "metadata": "{\"type\":\"decision\",\"query\":\"length normalization penalty\",\"round\":7}"
+      },
+      {
+        "id": "dff0c132-b597-4c95-a225-b762cc6f9cbf",
+        "text": "Agent Alice observed: \"length normalization penalty\" -> top=c8ea4297 at 2026-03-08T04:54:09.068Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945649126,
+        "metadata": "{\"type\":\"observation\",\"query\":\"length normalization penalty\",\"round\":7,\"accessCount\":1,\"lastAccessedAt\":1772945655303}"
+      },
+      {
+        "id": "617e3787-8337-4de9-ae88-a0070aa918f0",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=6",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945647868,
+        "metadata": "{\"type\":\"decision\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":6}"
+      },
+      {
+        "id": "d71d3e22-5bc0-4536-83e4-e48f459a7231",
+        "text": "Agent Alice observed: \"hybrid retrieval RRF fusion\" -> top=25394695 at 2026-03-08T04:54:07.785Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945647825,
+        "metadata": "{\"type\":\"observation\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":6,\"accessCount\":1,\"lastAccessedAt\":1772945655396}"
+      },
+      {
+        "id": "306d9aac-c5f9-4202-918d-4df7e43640b6",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=5",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945646839,
+        "metadata": "{\"type\":\"decision\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":5}"
+      },
+      {
+        "id": "25394695-13a7-4999-9fcf-7ca33aaa2edc",
+        "text": "Agent Alice observed: \"hybrid retrieval RRF fusion\" -> top=0f1f511b at 2026-03-08T04:54:06.610Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945646787,
+        "metadata": "{\"type\":\"observation\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":5,\"accessCount\":1,\"lastAccessedAt\":1772945648329}"
+      },
+      {
+        "id": "8b03b186-50ef-404b-a74e-d4d64572e69f",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=4",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945645121,
+        "metadata": "{\"type\":\"decision\",\"query\":\"length normalization penalty\",\"round\":4}"
+      },
+      {
+        "id": "c8ea4297-9fa7-4974-845a-30822fe8e684",
+        "text": "Agent Alice observed: \"length normalization penalty\" -> top=f3a19f87 at 2026-03-08T04:54:05.082Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945645109,
+        "metadata": "{\"type\":\"observation\",\"query\":\"length normalization penalty\",\"round\":4,\"accessCount\":1,\"lastAccessedAt\":1772945649571}"
+      },
+      {
+        "id": "7f57fc5a-e7e2-42e1-a55a-624e4cab06ba",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=3",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945644660,
+        "metadata": "{\"type\":\"decision\",\"query\":\"FTS fallback vector-only\",\"round\":3}"
+      },
+      {
+        "id": "ed0f86fa-74be-4238-8d4b-da5c8207ee1c",
+        "text": "Agent Alice observed: \"FTS fallback vector-only\" -> top=d41b9f9e at 2026-03-08T04:54:04.615Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945644647,
+        "metadata": "{\"type\":\"observation\",\"query\":\"FTS fallback vector-only\",\"round\":3,\"accessCount\":1,\"lastAccessedAt\":1772945653571}"
+      },
+      {
+        "id": "41a9ff55-be9c-4ab3-bc7c-79867a0cccac",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=2",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945644253,
+        "metadata": "{\"type\":\"decision\",\"query\":\"FTS fallback vector-only\",\"round\":2,\"accessCount\":3,\"lastAccessedAt\":1772945652079}"
+      },
+      {
+        "id": "3f76c086-56d9-4429-9160-738eb882bc33",
+        "text": "Agent Alice observed: \"FTS fallback vector-only\" -> top=d41b9f9e at 2026-03-08T04:54:04.214Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945644243,
+        "metadata": "{\"type\":\"observation\",\"query\":\"FTS fallback vector-only\",\"round\":2,\"accessCount\":3,\"lastAccessedAt\":1772945656539}"
+      },
+      {
+        "id": "daaf16f3-057d-4107-b71f-66d85c5d0b90",
+        "text": "Agent Alice decision: apply known fix or confirm behavior. Round=1",
+        "category": "decision",
+        "scope": "agent:alice",
+        "importance": 0.9,
+        "timestamp": 1772945643934,
+        "metadata": "{\"type\":\"decision\",\"query\":\"BM25 ghost entries fix\",\"round\":1}"
+      },
+      {
+        "id": "cadf917e-44e3-46bb-adba-cdc95f71a52f",
+        "text": "Agent Alice observed: \"BM25 ghost entries fix\" -> top=f9d50f2b at 2026-03-08T04:54:03.893Z",
+        "category": "other",
+        "scope": "agent:alice",
+        "importance": 0.7,
+        "timestamp": 1772945643925,
+        "metadata": "{\"type\":\"observation\",\"query\":\"BM25 ghost entries fix\",\"round\":1,\"accessCount\":2,\"lastAccessedAt\":1772945657528}"
+      }
+    ],
+    "bob": [
+      {
+        "id": "07553f31-b42b-481d-ae73-ea2f025e4101",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=15",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945661696,
+        "metadata": "{\"type\":\"decision\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":15}"
+      },
+      {
+        "id": "fc1718d3-7922-4af4-8149-f24249799529",
+        "text": "Agent Bob observed: \"hybrid retrieval RRF fusion\" -> top=1a6b42f7 at 2026-03-08T04:54:21.637Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945661665,
+        "metadata": "{\"type\":\"observation\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":15}"
+      },
+      {
+        "id": "8a2f4cce-61a3-437f-9a94-e054ebbeb682",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=14",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945659996,
+        "metadata": "{\"type\":\"decision\",\"query\":\"local embeddings Xenova MiniLM\",\"round\":14}"
+      },
+      {
+        "id": "2aab8304-a769-4eff-85cf-554988d4a51d",
+        "text": "Agent Bob observed: \"local embeddings Xenova MiniLM\" -> top=f3a19f87 at 2026-03-08T04:54:19.936Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945659968,
+        "metadata": "{\"type\":\"observation\",\"query\":\"local embeddings Xenova MiniLM\",\"round\":14}"
+      },
+      {
+        "id": "9c61bfeb-6989-404c-a827-c82ae96034d1",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=13",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945658571,
+        "metadata": "{\"type\":\"decision\",\"query\":\"length normalization penalty\",\"round\":13}"
+      },
+      {
+        "id": "3959e5b0-0744-477c-aa45-4a8c05d3ed74",
+        "text": "Agent Bob observed: \"length normalization penalty\" -> top=0cd0b0d6 at 2026-03-08T04:54:18.512Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945658543,
+        "metadata": "{\"type\":\"observation\",\"query\":\"length normalization penalty\",\"round\":13}"
+      },
+      {
+        "id": "2bbd9f98-2015-4588-886e-96826b8f91ff",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=12",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945657239,
+        "metadata": "{\"type\":\"decision\",\"query\":\"BM25 ghost entries fix\",\"round\":12}"
+      },
+      {
+        "id": "e2071f38-696b-405a-87c1-55c28d8f6931",
+        "text": "Agent Bob observed: \"BM25 ghost entries fix\" -> top=fddffb75 at 2026-03-08T04:54:17.185Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945657211,
+        "metadata": "{\"type\":\"observation\",\"query\":\"BM25 ghost entries fix\",\"round\":12}"
+      },
+      {
+        "id": "750c7743-652b-4e2b-a41f-d2f6e41b3519",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=11",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945656069,
+        "metadata": "{\"type\":\"decision\",\"query\":\"lightweight rerank cosine\",\"round\":11}"
+      },
+      {
+        "id": "b282c15e-a689-40d7-b3b2-5d59fdfca59c",
+        "text": "Agent Bob observed: \"lightweight rerank cosine\" -> top=af5cc75f at 2026-03-08T04:54:16.014Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945656044,
+        "metadata": "{\"type\":\"observation\",\"query\":\"lightweight rerank cosine\",\"round\":11}"
+      },
+      {
+        "id": "4434066d-4afa-4d2f-a40e-416852bd0281",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=10",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945654952,
+        "metadata": "{\"type\":\"decision\",\"query\":\"length normalization penalty\",\"round\":10}"
+      },
+      {
+        "id": "0cd0b0d6-9d5c-40d0-b835-260f17501e26",
+        "text": "Agent Bob observed: \"length normalization penalty\" -> top=f3a19f87 at 2026-03-08T04:54:14.895Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945654927,
+        "metadata": "{\"type\":\"observation\",\"query\":\"length normalization penalty\",\"round\":10,\"accessCount\":1,\"lastAccessedAt\":1772945659281}"
+      },
+      {
+        "id": "b0d03411-36e7-4c27-b65c-a7327ba0824b",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=9",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945653028,
+        "metadata": "{\"type\":\"decision\",\"query\":\"time decay half life days\",\"round\":9}"
+      },
+      {
+        "id": "92d91e5e-fbaa-46d9-b73d-c886e640ced8",
+        "text": "Agent Bob observed: \"time decay half life days\" -> top=9d7dd664 at 2026-03-08T04:54:12.896Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945652945,
+        "metadata": "{\"type\":\"observation\",\"query\":\"time decay half life days\",\"round\":9}"
+      },
+      {
+        "id": "c0f71748-4db8-4c2d-863a-1d36c893ac51",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=8",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945651339,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":8}"
+      },
+      {
+        "id": "386ea9bb-34fa-4a94-8504-d58890e88164",
+        "text": "Agent Bob observed: \"vector dimension mismatch handling\" -> top=f3a19f87 at 2026-03-08T04:54:11.254Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945651296,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":8,\"accessCount\":2,\"lastAccessedAt\":1772945660849}"
+      },
+      {
+        "id": "9f90a7d1-a093-4e81-8300-7766ad2cf8d0",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=7",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945649251,
+        "metadata": "{\"type\":\"decision\",\"query\":\"lightweight rerank cosine\",\"round\":7,\"accessCount\":2,\"lastAccessedAt\":1772945659416}"
+      },
+      {
+        "id": "af5cc75f-c7e4-44f7-9db8-121cf05fef0d",
+        "text": "Agent Bob observed: \"lightweight rerank cosine\" -> top=100ee824 at 2026-03-08T04:54:09.195Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945649228,
+        "metadata": "{\"type\":\"observation\",\"query\":\"lightweight rerank cosine\",\"round\":7,\"accessCount\":1,\"lastAccessedAt\":1772945656655}"
+      },
+      {
+        "id": "40b6cc9a-1c11-433a-8659-b8d8f824c280",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=6",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945648124,
+        "metadata": "{\"type\":\"decision\",\"query\":\"FTS fallback vector-only\",\"round\":6}"
+      },
+      {
+        "id": "ee1eeb78-54ac-4a81-8227-ca3c92449d51",
+        "text": "Agent Bob observed: \"FTS fallback vector-only\" -> top=d41b9f9e at 2026-03-08T04:54:08.011Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945648047,
+        "metadata": "{\"type\":\"observation\",\"query\":\"FTS fallback vector-only\",\"round\":6,\"accessCount\":1,\"lastAccessedAt\":1772945652502}"
+      },
+      {
+        "id": "826afa30-d2e5-44ca-a2c5-0e0bb4a7a9e5",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=5",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945646966,
+        "metadata": "{\"type\":\"decision\",\"query\":\"lightweight rerank cosine\",\"round\":5}"
+      },
+      {
+        "id": "100ee824-88fe-4b03-aa2e-81cd808dcdae",
+        "text": "Agent Bob observed: \"lightweight rerank cosine\" -> top=0f1f511b at 2026-03-08T04:54:06.912Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945646944,
+        "metadata": "{\"type\":\"observation\",\"query\":\"lightweight rerank cosine\",\"round\":5,\"accessCount\":1,\"lastAccessedAt\":1772945650049}"
+      },
+      {
+        "id": "9311890b-324c-4d11-9f59-a70a57a525c8",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=4",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945645205,
+        "metadata": "{\"type\":\"decision\",\"query\":\"time decay half life days\",\"round\":4}"
+      },
+      {
+        "id": "9d7dd664-3d95-4776-9f87-fdfbd930aeb1",
+        "text": "Agent Bob observed: \"time decay half life days\" -> top=898d351a at 2026-03-08T04:54:05.152Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945645185,
+        "metadata": "{\"type\":\"observation\",\"query\":\"time decay half life days\",\"round\":4,\"accessCount\":1,\"lastAccessedAt\":1772945654070}"
+      },
+      {
+        "id": "fe3edbce-0a48-42eb-b2d4-a2ac681e15ed",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=3",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945644722,
+        "metadata": "{\"type\":\"decision\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":3}"
+      },
+      {
+        "id": "1a6b42f7-7e59-4003-bd0e-b27275414547",
+        "text": "Agent Bob observed: \"hybrid retrieval RRF fusion\" -> top=7a79ac84 at 2026-03-08T04:54:04.686Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945644712,
+        "metadata": "{\"type\":\"observation\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":3,\"accessCount\":4,\"lastAccessedAt\":1772945662207}"
+      },
+      {
+        "id": "630cf803-3ba6-438d-babc-ad98c7ce51d8",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=2",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945644314,
+        "metadata": "{\"type\":\"decision\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":2,\"accessCount\":1,\"lastAccessedAt\":1772945646088}"
+      },
+      {
+        "id": "7a79ac84-d611-4ac1-8997-356b2cefaa63",
+        "text": "Agent Bob observed: \"hybrid retrieval RRF fusion\" -> top=0f1f511b at 2026-03-08T04:54:04.281Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945644303,
+        "metadata": "{\"type\":\"observation\",\"query\":\"hybrid retrieval RRF fusion\",\"round\":2,\"accessCount\":2,\"lastAccessedAt\":1772945662465}"
+      },
+      {
+        "id": "a0162f0a-3087-4a85-9608-f1fd74420b39",
+        "text": "Agent Bob decision: apply known fix or confirm behavior. Round=1",
+        "category": "decision",
+        "scope": "agent:bob",
+        "importance": 0.9,
+        "timestamp": 1772945644004,
+        "metadata": "{\"type\":\"decision\",\"query\":\"BM25 ghost entries fix\",\"round\":1}"
+      },
+      {
+        "id": "fddffb75-1e59-4384-97ed-dba20687d518",
+        "text": "Agent Bob observed: \"BM25 ghost entries fix\" -> top=f9d50f2b at 2026-03-08T04:54:03.955Z",
+        "category": "other",
+        "scope": "agent:bob",
+        "importance": 0.7,
+        "timestamp": 1772945643992,
+        "metadata": "{\"type\":\"observation\",\"query\":\"BM25 ghost entries fix\",\"round\":1,\"accessCount\":3,\"lastAccessedAt\":1772945657832}"
+      }
+    ],
+    "charlie": [
+      {
+        "id": "a5353cd7-2fe7-4e62-b52d-42009a988705",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=15",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945661910,
+        "metadata": "{\"type\":\"decision\",\"query\":\"BM25 ghost entries fix\",\"round\":15}"
+      },
+      {
+        "id": "cd3bb017-b1e7-4ad3-bba6-66db1cfe6799",
+        "text": "Agent Charlie observed: \"BM25 ghost entries fix\" -> top=f9d50f2b at 2026-03-08T04:54:21.831Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945661877,
+        "metadata": "{\"type\":\"observation\",\"query\":\"BM25 ghost entries fix\",\"round\":15}"
+      },
+      {
+        "id": "07290a14-6bd0-44ee-a220-10067534c299",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=14",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945660331,
+        "metadata": "{\"type\":\"decision\",\"query\":\"FTS fallback vector-only\",\"round\":14}"
+      },
+      {
+        "id": "31e7106a-3e55-4b1b-b914-e9c4b1201622",
+        "text": "Agent Charlie observed: \"FTS fallback vector-only\" -> top=d41b9f9e at 2026-03-08T04:54:20.255Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945660295,
+        "metadata": "{\"type\":\"observation\",\"query\":\"FTS fallback vector-only\",\"round\":14}"
+      },
+      {
+        "id": "6f2d71b4-8932-4be8-9261-3b1dd8bb7960",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=13",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945658843,
+        "metadata": "{\"type\":\"decision\",\"query\":\"length normalization penalty\",\"round\":13}"
+      },
+      {
+        "id": "c1c77a2a-5942-4e6f-bc10-0a2789f32766",
+        "text": "Agent Charlie observed: \"length normalization penalty\" -> top=739a40e2 at 2026-03-08T04:54:18.781Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945658812,
+        "metadata": "{\"type\":\"observation\",\"query\":\"length normalization penalty\",\"round\":13}"
+      },
+      {
+        "id": "dbcbb82c-2c2e-481a-a2c5-b92757e97e53",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=12",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945657352,
+        "metadata": "{\"type\":\"decision\",\"query\":\"time decay half life days\",\"round\":12}"
+      },
+      {
+        "id": "0e2a9441-ee74-4d76-b5d5-76203314488c",
+        "text": "Agent Charlie observed: \"time decay half life days\" -> top=744227f7 at 2026-03-08T04:54:17.294Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945657324,
+        "metadata": "{\"type\":\"observation\",\"query\":\"time decay half life days\",\"round\":12}"
+      },
+      {
+        "id": "2113d3b2-dc9a-45f2-a5e7-b96fd0ae3cce",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=11",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945656188,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":11}"
+      },
+      {
+        "id": "d63553ac-6c18-490e-b372-312f13b924f6",
+        "text": "Agent Charlie observed: \"vector dimension mismatch handling\" -> top=ff5d067b at 2026-03-08T04:54:16.132Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945656161,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":11}"
+      },
+      {
+        "id": "e8934d3c-8c5c-453c-8d86-010aadd9acf1",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=10",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945655068,
+        "metadata": "{\"type\":\"decision\",\"query\":\"lightweight rerank cosine\",\"round\":10}"
+      },
+      {
+        "id": "2835c990-acbf-4b8a-824a-d289d204c9a1",
+        "text": "Agent Charlie observed: \"lightweight rerank cosine\" -> top=0f1f511b at 2026-03-08T04:54:15.013Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945655045,
+        "metadata": "{\"type\":\"observation\",\"query\":\"lightweight rerank cosine\",\"round\":10}"
+      },
+      {
+        "id": "349e4ff3-1aaf-47a1-bf81-f069409b4227",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=9",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945653319,
+        "metadata": "{\"type\":\"decision\",\"query\":\"length normalization penalty\",\"round\":9}"
+      },
+      {
+        "id": "739a40e2-66c3-446a-b0e9-e8e5effe69fe",
+        "text": "Agent Charlie observed: \"length normalization penalty\" -> top=f3a19f87 at 2026-03-08T04:54:13.252Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945653284,
+        "metadata": "{\"type\":\"observation\",\"query\":\"length normalization penalty\",\"round\":9,\"accessCount\":2,\"lastAccessedAt\":1772945659531}"
+      },
+      {
+        "id": "1aad39bf-13f0-4503-9c72-81a7b474704d",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=8",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945651622,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":8}"
+      },
+      {
+        "id": "e97e5cbb-ddd6-41ad-b795-e444b501e827",
+        "text": "Agent Charlie observed: \"vector dimension mismatch handling\" -> top=ff5d067b at 2026-03-08T04:54:11.444Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945651518,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":8}"
+      },
+      {
+        "id": "78118b35-36ae-492d-abd0-13d315550855",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=7",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945649660,
+        "metadata": "{\"type\":\"decision\",\"query\":\"local embeddings Xenova MiniLM\",\"round\":7}"
+      },
+      {
+        "id": "469ca084-dbfa-4db3-8cf6-942b9531950d",
+        "text": "Agent Charlie observed: \"local embeddings Xenova MiniLM\" -> top=f3a19f87 at 2026-03-08T04:54:09.574Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945649626,
+        "metadata": "{\"type\":\"observation\",\"query\":\"local embeddings Xenova MiniLM\",\"round\":7}"
+      },
+      {
+        "id": "24860c52-a3c5-461f-b297-47ca3eee184b",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=6",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945648263,
+        "metadata": "{\"type\":\"decision\",\"query\":\"access reinforcement half-life\",\"round\":6}"
+      },
+      {
+        "id": "5c98a153-07cd-4b07-a023-2a48b759207c",
+        "text": "Agent Charlie observed: \"access reinforcement half-life\" -> top=500804c3 at 2026-03-08T04:54:08.191Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945648220,
+        "metadata": "{\"type\":\"observation\",\"query\":\"access reinforcement half-life\",\"round\":6}"
+      },
+      {
+        "id": "7f0b09cb-4fd2-48e8-b5f6-e70b69abdc42",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=5",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945647158,
+        "metadata": "{\"type\":\"decision\",\"query\":\"access reinforcement half-life\",\"round\":5}"
+      },
+      {
+        "id": "500804c3-a3ed-4719-aa58-e108b70ac40e",
+        "text": "Agent Charlie observed: \"access reinforcement half-life\" -> top=898d351a at 2026-03-08T04:54:07.059Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945647129,
+        "metadata": "{\"type\":\"observation\",\"query\":\"access reinforcement half-life\",\"round\":5,\"accessCount\":2,\"lastAccessedAt\":1772945658233}"
+      },
+      {
+        "id": "3194df86-754e-4512-928c-908390d8fba1",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=4",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945645268,
+        "metadata": "{\"type\":\"decision\",\"query\":\"FTS fallback vector-only\",\"round\":4}"
+      },
+      {
+        "id": "6d629ac8-2b72-4dda-9176-968ad6a3b017",
+        "text": "Agent Charlie observed: \"FTS fallback vector-only\" -> top=d41b9f9e at 2026-03-08T04:54:05.233Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945645257,
+        "metadata": "{\"type\":\"observation\",\"query\":\"FTS fallback vector-only\",\"round\":4,\"accessCount\":1,\"lastAccessedAt\":1772945661076}"
+      },
+      {
+        "id": "6440200b-9bbc-4d70-b4c7-82e7c38cdcc5",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=3",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945644777,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":3}"
+      },
+      {
+        "id": "f1737d68-bd21-4c22-a8d1-595e698ab83b",
+        "text": "Agent Charlie observed: \"vector dimension mismatch handling\" -> top=ff5d067b at 2026-03-08T04:54:04.740Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945644768,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":3,\"accessCount\":1,\"lastAccessedAt\":1772945662737}"
+      },
+      {
+        "id": "638d2eb0-203b-4568-b702-18f5a8f7420d",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=2",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945644373,
+        "metadata": "{\"type\":\"decision\",\"query\":\"time decay half life days\",\"round\":2,\"accessCount\":1,\"lastAccessedAt\":1772945647690}"
+      },
+      {
+        "id": "744227f7-ff64-4382-981e-ea0b11bb6572",
+        "text": "Agent Charlie observed: \"time decay half life days\" -> top=898d351a at 2026-03-08T04:54:04.338Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945644364,
+        "metadata": "{\"type\":\"observation\",\"query\":\"time decay half life days\",\"round\":2,\"accessCount\":3,\"lastAccessedAt\":1772945658031}"
+      },
+      {
+        "id": "68b554b7-c290-4f92-94c5-412abfb64ce9",
+        "text": "Agent Charlie decision: apply known fix or confirm behavior. Round=1",
+        "category": "decision",
+        "scope": "agent:charlie",
+        "importance": 0.9,
+        "timestamp": 1772945644066,
+        "metadata": "{\"type\":\"decision\",\"query\":\"vector dimension mismatch handling\",\"round\":1,\"accessCount\":1,\"lastAccessedAt\":1772945644533}"
+      },
+      {
+        "id": "ff5d067b-95d5-470e-bfcf-f69a2bb9ac95",
+        "text": "Agent Charlie observed: \"vector dimension mismatch handling\" -> top=f3a19f87 at 2026-03-08T04:54:04.028Z",
+        "category": "other",
+        "scope": "agent:charlie",
+        "importance": 0.7,
+        "timestamp": 1772945644059,
+        "metadata": "{\"type\":\"observation\",\"query\":\"vector dimension mismatch handling\",\"round\":1,\"accessCount\":7,\"lastAccessedAt\":1772945663342}"
+      }
+    ],
+    "writtenDuringTest": [
+      "cadf917e-44e3-46bb-adba-cdc95f71a52f",
+      "daaf16f3-057d-4107-b71f-66d85c5d0b90",
+      "fddffb75-1e59-4384-97ed-dba20687d518",
+      "a0162f0a-3087-4a85-9608-f1fd74420b39",
+      "ff5d067b-95d5-470e-bfcf-f69a2bb9ac95",
+      "68b554b7-c290-4f92-94c5-412abfb64ce9",
+      "3f76c086-56d9-4429-9160-738eb882bc33",
+      "41a9ff55-be9c-4ab3-bc7c-79867a0cccac",
+      "7a79ac84-d611-4ac1-8997-356b2cefaa63",
+      "630cf803-3ba6-438d-babc-ad98c7ce51d8",
+      "744227f7-ff64-4382-981e-ea0b11bb6572",
+      "638d2eb0-203b-4568-b702-18f5a8f7420d",
+      "ed0f86fa-74be-4238-8d4b-da5c8207ee1c",
+      "7f57fc5a-e7e2-42e1-a55a-624e4cab06ba",
+      "1a6b42f7-7e59-4003-bd0e-b27275414547",
+      "fe3edbce-0a48-42eb-b2d4-a2ac681e15ed",
+      "f1737d68-bd21-4c22-a8d1-595e698ab83b",
+      "6440200b-9bbc-4d70-b4c7-82e7c38cdcc5",
+      "c8ea4297-9fa7-4974-845a-30822fe8e684",
+      "8b03b186-50ef-404b-a74e-d4d64572e69f",
+      "9d7dd664-3d95-4776-9f87-fdfbd930aeb1",
+      "9311890b-324c-4d11-9f59-a70a57a525c8",
+      "6d629ac8-2b72-4dda-9176-968ad6a3b017",
+      "3194df86-754e-4512-928c-908390d8fba1",
+      "25394695-13a7-4999-9fcf-7ca33aaa2edc",
+      "306d9aac-c5f9-4202-918d-4df7e43640b6",
+      "100ee824-88fe-4b03-aa2e-81cd808dcdae",
+      "826afa30-d2e5-44ca-a2c5-0e0bb4a7a9e5",
+      "500804c3-a3ed-4719-aa58-e108b70ac40e",
+      "7f0b09cb-4fd2-48e8-b5f6-e70b69abdc42",
+      "d71d3e22-5bc0-4536-83e4-e48f459a7231",
+      "617e3787-8337-4de9-ae88-a0070aa918f0",
+      "ee1eeb78-54ac-4a81-8227-ca3c92449d51",
+      "40b6cc9a-1c11-433a-8659-b8d8f824c280",
+      "5c98a153-07cd-4b07-a023-2a48b759207c",
+      "24860c52-a3c5-461f-b297-47ca3eee184b",
+      "dff0c132-b597-4c95-a225-b762cc6f9cbf",
+      "192f77cc-a829-4a3a-9b33-6766a61f548a",
+      "af5cc75f-c7e4-44f7-9db8-121cf05fef0d",
+      "9f90a7d1-a093-4e81-8300-7766ad2cf8d0",
+      "469ca084-dbfa-4db3-8cf6-942b9531950d",
+      "78118b35-36ae-492d-abd0-13d315550855",
+      "3b0c7f8d-90f8-4e29-8f59-c882232d3972",
+      "4795ec20-6d41-43e8-912c-c722e6516cc3",
+      "386ea9bb-34fa-4a94-8504-d58890e88164",
+      "c0f71748-4db8-4c2d-863a-1d36c893ac51",
+      "e97e5cbb-ddd6-41ad-b795-e444b501e827",
+      "1aad39bf-13f0-4503-9c72-81a7b474704d",
+      "4d4cc991-adce-4fb3-955c-f23614691d66",
+      "47af188f-9913-480a-997e-68d4239799c7",
+      "92d91e5e-fbaa-46d9-b73d-c886e640ced8",
+      "b0d03411-36e7-4c27-b65c-a7327ba0824b",
+      "739a40e2-66c3-446a-b0e9-e8e5effe69fe",
+      "349e4ff3-1aaf-47a1-bf81-f069409b4227",
+      "f08c7c9c-0c1d-4a76-9bd0-79f3cc000e34",
+      "1a346572-80c2-46da-a972-f291371d546a",
+      "0cd0b0d6-9d5c-40d0-b835-260f17501e26",
+      "4434066d-4afa-4d2f-a40e-416852bd0281",
+      "2835c990-acbf-4b8a-824a-d289d204c9a1",
+      "e8934d3c-8c5c-453c-8d86-010aadd9acf1",
+      "3fbcb584-e5da-4ef7-86bc-26a146d97198",
+      "cd37014c-05da-452e-b61f-a054eafa3c85",
+      "b282c15e-a689-40d7-b3b2-5d59fdfca59c",
+      "750c7743-652b-4e2b-a41f-d2f6e41b3519",
+      "d63553ac-6c18-490e-b372-312f13b924f6",
+      "2113d3b2-dc9a-45f2-a5e7-b96fd0ae3cce",
+      "aca53dab-4b54-4491-b2da-f377e7934bbf",
+      "57734f32-650c-48f5-90b1-78a9495ece89",
+      "e2071f38-696b-405a-87c1-55c28d8f6931",
+      "2bbd9f98-2015-4588-886e-96826b8f91ff",
+      "0e2a9441-ee74-4d76-b5d5-76203314488c",
+      "dbcbb82c-2c2e-481a-a2c5-b92757e97e53",
+      "554be7d3-c92e-4ec3-94b9-8c1aab5ce620",
+      "d1fc46dc-c1c7-455c-a56d-f17243efa8c3",
+      "3959e5b0-0744-477c-aa45-4a8c05d3ed74",
+      "9c61bfeb-6989-404c-a827-c82ae96034d1",
+      "c1c77a2a-5942-4e6f-bc10-0a2789f32766",
+      "6f2d71b4-8932-4be8-9261-3b1dd8bb7960",
+      "30e30b79-9809-41f0-a868-fe0f098719a3",
+      "6391bd8e-4b37-43f7-963c-0fd759ac1d64",
+      "2aab8304-a769-4eff-85cf-554988d4a51d",
+      "8a2f4cce-61a3-437f-9a94-e054ebbeb682",
+      "31e7106a-3e55-4b1b-b914-e9c4b1201622",
+      "07290a14-6bd0-44ee-a220-10067534c299",
+      "bb512662-e30a-46e1-bc1a-b665d2443ec2",
+      "f10508cd-609b-4d37-85f2-d61c56422c00",
+      "fc1718d3-7922-4af4-8149-f24249799529",
+      "07553f31-b42b-481d-ae73-ea2f025e4101",
+      "cd3bb017-b1e7-4ad3-bba6-66db1cfe6799",
+      "a5353cd7-2fe7-4e62-b52d-42009a988705"
+    ]
+  }
+}
